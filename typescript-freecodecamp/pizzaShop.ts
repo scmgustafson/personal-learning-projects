@@ -14,6 +14,11 @@ const menu: Pizza[] = [
   { id: nextPizzaId++, name: "Meat", price: 20 },
 ];
 
+function addToArray<T>(targetArray: T[], item: T): T[] {
+  targetArray.push(item);
+  return targetArray;
+}
+
 function addNewPizza(pizzaObj: Omit<Pizza, "id">): Pizza {
   let newPizza = {
     id: nextPizzaId++,
@@ -80,6 +85,13 @@ placeOrder("CBR");
 completeOrder(1);
 
 let foundPizza = getPizzaDetail("CBR");
+
+addToArray(menu, { id: nextPizzaId++, name: "Sweet Onion", price: 15 });
+addToArray<Order>(orderQueue, {
+  id: orderNumber++,
+  pizza: menu[3],
+  status: "ordered",
+});
 
 console.log("Menu:\n" + JSON.stringify(menu, null, 2));
 console.log("Orders:\n" + JSON.stringify(orderQueue, null, 2));
