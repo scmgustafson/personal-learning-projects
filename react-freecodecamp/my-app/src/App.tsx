@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import MyComponent from "./MyComponent";
 
 const Title = (): any => {
   return <div>Title!</div>;
@@ -50,6 +51,12 @@ function App() {
           textColor="Black"
           large={false}
         />
+        <MyComponent bgColor="blue" height="100">
+          Hello world!
+        </MyComponent>
+        <MyComponent bgColor="red" height="20">
+          Goodbye world!
+        </MyComponent>
       </header>
     </div>
   );
