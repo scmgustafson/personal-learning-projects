@@ -1,5 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import MyComponent from "./MyComponent";
 
@@ -57,6 +55,9 @@ function App() {
         <MyComponent bgColor="red" height="20">
           Goodbye world!
         </MyComponent>
+        <div className="text-3xl font-bold underline text-blue-600">
+          Hello Tailwind
+        </div>
       </header>
     </div>
   );
