@@ -37,21 +37,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="text-3xl font-bold underline text-blue-600 bg-blue-100">
-          Hello Blue
-        </div>
-        <div className="text-1xl font-bold underline text-yellow-600 bg-yellow-50 border-2 border-yellow-900">
-          Hello Yellow
-        </div>
-        <div className="text-5xl font-bold underline text-red-300 bg-emerald-500">
-          Hello Red
-        </div>
-        <div className="text-xl text-purple-600 border-sky-500 border-2">
-          Hello Purple
-        </div>
-        <div className="text-xl text-purple-100 bg-violet-600 text-right">
-          Hello other purple
-        </div>
+        <button className="text-green-700 border-2 border-green-700 px-8 py-4 m-4 rounded-md">
+          Forest
+        </button>
+        <button className="text-white bg-sky-500 border-sky-300 border-2 px-8 py-4 m-4 rounded-md">
+          Sky
+        </button>
+        <button className="text-red-500 bg-red-800 p-8 rounded-full hover:bg-red-500 hover:text-red-100 m-4">
+          Fire
+        </button>
+        <button className="text-violet-900 bg-violet-400 rounded-full py-2 px-10 m-4">
+          Magic
+        </button>
       </header>
     </div>
   );
