@@ -1,69 +1,17 @@
 import "./App.css";
-import MyComponent from "./MyComponent";
-import Button from "./Button";
-import Cat from "./Cat";
-
-const Title = (): any => {
-  return <div>Title!</div>;
-};
-
-const Description = (): any => {
-  console.log("Description console text");
-  return <div>Here is some description for the app</div>;
-};
-
-const Message = (props: any) => {
-  const { text, bgColor } = props; // this is destructuring the dict props {text: "balh", color: "blah"}
-
-  console.log(props);
-  // curly braces below are used for rendering any javascript
-  return <div style={{ background: bgColor }}>{text}</div>;
-};
-
-const Box = (props: any) => {
-  const { label, bgColor, textColor, large } = props;
-  return (
-    <div
-      style={{
-        background: bgColor,
-        color: textColor,
-        fontSize: large ? "40px" : "20px",
-      }}
-    >
-      {label}
-    </div>
-  );
-};
+import Box1 from "./Box1";
+import Box2 from "./Box2";
+import Box3 from "./Box3";
+import Box4 from "./Box4";
 
 const App = () => {
   return (
-    <div>
-      <div className="flex justify-center h-64 p-4 m-4 border-2 border-blue-400">
-        <Cat />
-        <Cat />
-        <Cat />
-      </div>
-      <div className="flex justify-between h-64 p-4 m-4 border-2 border-red-400">
-        <Cat />
-        <Cat />
-        <Cat />
-      </div>
-      <div className="flex justify-center items-center h-64 p-4 m-4 border-2 border-green-400">
-        <Cat />
-        <Cat />
-        <Cat />
-      </div>
-      <div className="flex justify-around items-end h-64 p-4 m-4 border-2 border-purple-400">
-        <Cat />
-        <Cat />
-        <Cat />
-      </div>
-      <div className="flex justify-between items-center h-64 p-4 m-4 border-2 border-orange-400">
-        <Cat />
-        <Cat />
-        <Cat />
-      </div>
-    </div>
+    <>
+      <Box1 />
+      <Box2 />
+      <Box3 />
+      <Box4 />
+    </>
   );
 };
 
